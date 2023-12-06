@@ -1,0 +1,87 @@
+.portfolio {
+    margin: 100px 0;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+
+        h2 {
+            color: #FFF;
+            font-size: 58px;
+            font-weight: 800;
+
+            @include mobile() {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .mySwiperDesktop {
+        width: 100%;
+
+        @include mobile() {
+            width: 100%;
+            display: none;
+        }
+    }
+
+    // .mySwiper {
+    //     width: 100%;
+    //     display: none;
+
+    //     @include mobile() {
+    //         display: flex;
+    //     }
+    // }
+
+    .mySwiperMobile {
+        display: none;
+
+        @include mobile() {
+            display: block;
+        }
+    }
+
+    .portfolio__carusel {
+        width: 100%;
+        height: 417px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+
+        @include tablet() {
+            height: 300px;
+        }
+
+    }
+
+    .portfolio__carusel__slide-wrap {
+        max-width: 384px;
+        align-self: start;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .portfolio__carusel__slide-wrap:nth-child(2) {
+        align-self: center;
+    }
+
+    .portfolio__carusel__slide-wrap:nth-child(3) {
+        align-self: end;
+    }
+
+    .carusel-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 25px;
+    }
+}

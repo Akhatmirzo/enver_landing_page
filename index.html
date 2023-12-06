@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar__wrapper">
+            <a href="/" class="logo">
+                <img src="./assets/images/logo.svg" alt="logo Enver">
+                Enver
+            </a>
+
+            <ul class="navbar__list">
+                <li class="navbar__list-item navbar-active">
+                    <a href="/">Home</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a href="/">Services</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a href="/">Our Project</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a href="/">About us</a>
+                </li>
+                <li class="list-btn">
+                    <a href="/" class="navbar-btn">
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+
+            <div class="navbar-btns">
+                <a href="/" class="navbar-btn">
+                    Contact us
+                </a>
+
+                <button class="gamburger-menu" onclick="openMenu()">
+                    <img src="./assets/images/icon__menu-bars.svg" alt="bars">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <div class="container hero__wrapper">
+                <div class="hero__layer1"></div>
+                <div class="hero__layer2"></div>
+
+                <div class="hero__content">
+                    <h2>Build Your Awesome Platform</h2>
+                    <p>
+                        Enver studio is a digital studio that offers several services such as UI/UX Design to
+                        developers, we will provide the best service for those of you who use our services.
+                    </p>
+
+                    <a href="/">
+                        Our Services
+                        <img src="./assets/images/icon__arrow-right-up.svg" alt="arrow">
+                    </a>
+                </div>
+
+                <div class="hero__image">
+                    <img src="./assets/images/icon__hero-image.svg" alt="hero image">
+
+                    <img src="./assets/images/icon__hero-image2.svg" alt="">
+                    <img src="./assets/images/icon__hero-image3.svg" alt="">
+                    <img src="./assets/images/icon__hero-image4.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="choice">
+            <div class="container">
+                <div class="choice__title">
+                    <h2>Why Enver Is The Best Choice?</h2>
+                    <p>Watch this one minute video so you understand why you should use our services!</p>
+                </div>
+
+                <div class="choice__video">
+                    <img src="./assets/images/icon__Play.svg" alt="video play">
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container services__wrapper">
+                <h2>The Service We Provide For You</h2>
+
+                <ul class="services__list">
+                    <li class="services__list-item">
+                        <img src="./assets/images/icon__development.svg" alt="Development">
+                        <h3>Development</h3>
+                        <p>Create a platform with the best and coolest quality from us.</p>
+                    </li>
+                    <li class="services__list-item">
+                        <img src="./assets/images/icon__development.svg" alt="Development">
+                        <h3>Development</h3>
+                        <p>Create a platform with the best and coolest quality from us.</p>
+                    </li>
+                    <li class="services__list-item">
+                        <img src="./assets/images/icon__development.svg" alt="Development">
+                        <h3>Development</h3>
+                        <p>Create a platform with the best and coolest quality from us.</p>
+                    </li>
+                    <li class="services__list-item">
+                        <img src="./assets/images/icon__development.svg" alt="Development">
+                        <h3>Development</h3>
+                        <p>Create a platform with the best and coolest quality from us.</p>
+                    </li>
+                    <li class="services__list-item">
+                        <img src="./assets/images/icon__development.svg" alt="Development">
+                        <h3>Development</h3>
+                        <p>Create a platform with the best and coolest quality from us.</p>
+                    </li>
+                    <li class="services__list-item">
+                        <img src="./assets/images/icon__development.svg" alt="Development">
+                        <h3>Development</h3>
+                        <p>Create a platform with the best and coolest quality from us.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container portfolio__wrapper">
+                <h2>Our Awesome Portofolio</h2>
+
+                <div class="swiper mySwiperDesktop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio__carusel">
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__carusel">
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__carusel">
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                                <div class="portfolio__carusel__slide-wrap">
+                                    <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- ! Swiper mobile -->
+                <div class="swiper mySwiperMobile">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio__carusel__slide-wrap">
+                                <img src="./assets/images/portfolio__image1.png" alt="portfolio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carusel-btn">
+                        <img src="./assets/images/portfolio__carusel-btn.svg" alt="arrow-left">
+                        <img src="./assets/images/portfolio__carusel-btn-arrow-right.svg" alt="arrow right">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer__wrapper">
+            <a href="/" class="logo">
+                <img src="./assets/images/logo.svg" alt="logo Enver">
+                Enver
+            </a>
+
+            <ul>
+                <li><a href="/">Support</a></li>
+                <li><a href="/">Privacy Policy</a></li>
+                <li><a href="/">Terms and Conditions</a></li>
+            </ul>
+
+            <p>© 2020 Enver, All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

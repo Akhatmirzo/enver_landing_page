@@ -1,0 +1,207 @@
+.hero {
+    overflow: hidden;
+    padding: 50px 0 200px;
+
+    @include tablet() {
+        padding-top: 200px;
+    }
+    @include mobile() {
+        padding-top: 150px;
+    }
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include tablet() {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include mobile() {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet() {
+            align-items: center;
+        }
+
+        h2 {
+            color: #FFF;
+            font-family: 'Graphik', sans-serif;
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 84px;
+
+            @include tablet() {
+                text-align: center;
+                font-size: 65px;
+            }
+            @include mobile() {
+                font-size: 55px;
+            }
+            @include media(0px, 540px) {
+                font-size: 42px;
+                line-height: 150%;
+            }
+        }
+
+        p {
+            max-width: 536px;
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 39px;
+            letter-spacing: -0.657px;
+            margin-block: 25px 50px;
+            @include tablet() {
+                text-align: center;
+            }
+            @include mobile() {
+                font-size: 18px;
+            }
+            @include media(0px, 540px) {
+                font-size: 16px;
+                line-height: 150%;
+            }
+        }
+
+        a {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-block: 16px;
+            border-radius: 4px;
+            background: #5454D4;
+
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 700;
+
+            @include mobile() {
+                font-size: 18px;
+            }
+            @include media(0px, 540px) {
+                padding-block: 12px;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        min-width: 550px;
+        height: 813px;
+        background: url('../assets/images/hero__image.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 39px 50px;
+        margin-right: -50px;
+        position: relative;
+
+        @include media(0px, 1024px) {
+            margin-right: 0;
+            background-position: center 0px;
+        }
+
+        @include mobile() {
+            margin-top: 120px;
+            height: 472px;
+            min-width: 100%;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        & img:first-child {
+            top: 100px;
+            right: 50px;
+
+            @include media(0px, 1024px) {
+                top: 200px;
+                right: 150px;
+            }
+            @include mobile() {
+                right: 0;
+                top: 0;
+            }
+        }
+
+        & img:nth-child(2) {
+            top: 156px;
+            left: -50px;
+
+            @include media(0px, 1024px) {
+                top: 200px;
+                left: 50px;
+            }
+            @include mobile() {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        & img:nth-child(3) {
+            bottom: 100px;
+            left: -80px;
+
+            @include media(0px, 1024px) {
+                bottom: 0;
+                left: 50px;
+            }
+            @include mobile() {
+                left: 0;
+            }
+        }
+
+        & img:nth-child(4) {
+            bottom: 100px;
+            right: 50px;
+
+            @include media(0px, 1024px) {
+                bottom: 50px;
+            }
+            @include mobile() {
+                bottom: 0;
+            }
+        }
+    }
+
+    &__layer1 {
+        position: absolute;
+        top: -400px;
+        left: -200px;
+
+        width: 467px;
+        height: 1233.793px;
+        transform: rotate(-54.374deg);
+        flex-shrink: 0;
+        border-radius: 233.5px;
+        background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.11) 100%);
+        filter: blur(150px);
+    }
+
+    &__layer2 {
+        position: absolute;
+        top: -200px;
+        right: 0;
+
+        border-radius: 233.5px;
+        background: linear-gradient(180deg, rgba(251, 168, 28, 0.11) 0%, rgba(224, 86, 136, 0.06) 100%);
+        filter: blur(150px);
+        width: 467px;
+        height: 1399.298px;
+        transform: rotate(65.712deg);
+        flex-shrink: 0;
+    }
+}
